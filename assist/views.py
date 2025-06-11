@@ -1,7 +1,5 @@
 import sys
 import os
-
-# Add grandparent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from traveller.lang_chain_code.main_p import get_assistant_response
 from django.shortcuts import render, redirect
@@ -16,7 +14,7 @@ def travel_assistant(request):
         result = get_assistant_response(question)
 
         if result.get("quit"):
-            request.session.flush()  # clears session
+            request.session.flush()
             return render(request, "travel_assistant.html", {
                 "chat_log": chat_log + [{"user": question, "bot": result["response"]}],
                 "quit": True
