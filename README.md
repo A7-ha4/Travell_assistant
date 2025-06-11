@@ -22,7 +22,7 @@ An intelligent travel assistant built with Django, LangChain, and Ollama — pow
 |--------------------|------------------------------------------|
 | **LangChain**       | RAG pipeline, memory, and prompt chaining |
 | **Ollama**          | Local LLM backend (LLaMA 3 8B)           |
-| **maxbai-embed-large** | Embedding model for vector search         |
+| **mxbai-embed-large** | Embedding model for vector search         |
 | **ChromaDB**        | Vector storage & retrieval               |
 | **Django**          | Web framework & frontend                 |
 | **Python**          | Core language                           |
